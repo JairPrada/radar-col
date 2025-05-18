@@ -25,7 +25,7 @@ export default function BlankPage() {
   };
   return (
     <div className="grid grid-cols-12 gap-4 md:gap-6 relative">
-      <div className="col-span-12 sticky top-20 z-10 text-gray-700 dark:bg-gray-900 dark:text-gray-400 p-4 rounded-lg shadow-sm border dark:border-gray-700">
+      <div className="col-span-12 sticky top-20 z-10 text-gray-700 dark:text-gray-400 shadow-sm rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 dark:border-gray-800 dark:bg-white/[0.03]">
         <div>
           <Label>Seleccion el año</Label>
           <div className="relative">
