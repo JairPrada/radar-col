@@ -3,7 +3,6 @@ import { ThemeToggleButton } from "@/components/common/ThemeToggleButton";
 import NotificationDropdown from "@/components/header/NotificationDropdown";
 import UserDropdown from "@/components/header/UserDropdown";
 import { useSidebar } from "@/context/SidebarContext";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState ,useEffect,useRef} from "react";
 
@@ -84,20 +83,15 @@ const AppHeader: React.FC = () => {
           </button>
 
           <Link href="/" className="lg:hidden">
-            <Image
-              width={154}
-              height={32}
-              className="dark:hidden"
-              src="./images/logo/logo.svg"
-              alt="Logo"
-            />
-            <Image
-              width={154}
-              height={32}
-              className="hidden dark:block"
-              src="./images/logo/logo-dark.svg"
-              alt="Logo"
-            />
+           <div className="flex items-center gap-2">
+            <svg  xmlns="http://www.w3.org/2000/svg" width={50} height={50} 
+fill={"#0e5ede"} viewBox="0 0 24 24">
+<path d="m12,2C6.58,2,2,6.58,2,12s4.58,10,10,10,10-4.58,10-10S17.42,2,12,2Zm0,18c-4.34,0-8-3.66-8-8S7.66,4,12,4c1.82,0,3.51.65,4.87,1.71l-1.41,1.41c-1.01-.73-2.21-1.12-3.46-1.12-1.58,0-3.09.63-4.23,1.77-1.14,1.14-1.77,2.64-1.77,4.23s.63,3.09,1.77,4.23,2.64,1.77,4.23,1.77,3.09-.63,4.23-1.77l-1.41-1.41c-1.53,1.53-4.1,1.53-5.63,0-.76-.76-1.18-1.76-1.18-2.82s.42-2.05,1.18-2.82c1.28-1.28,3.3-1.47,4.82-.6l-1.49,1.49c-.16-.05-.33-.08-.51-.08-1.08,0-2,.92-2,2s.92,2,2,2,2-.92,2-2c0-.18-.03-.34-.08-.51l4.36-4.36c1.07,1.36,1.71,3.05,1.71,4.87,0,4.34-3.66,8-8,8Z"></path>
+            </svg>
+            <h1 className="font-bold text-gray-800 text-title-sm dark:text-white/90">
+              RadarCol
+            </h1>
+            </div>
           </Link>
 
           <button

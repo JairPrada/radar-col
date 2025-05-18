@@ -2,6 +2,7 @@
 import React from "react";
 import Badge from "../ui/badge/Badge";
 import { ArrowDownIcon, ArrowUpIcon, BoxIconLine, GroupIcon } from "@/icons";
+import ColombiaMap from "../maps/ColombiaMap";
 
 export const EcommerceMetrics = () => {
   return (
@@ -51,6 +52,8 @@ export const EcommerceMetrics = () => {
         </div>
       </div>
       {/* <!-- Metric Item End --> */}
+
+      <ColombiaMap />
     </div>
   );
 };
